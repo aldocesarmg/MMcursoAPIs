@@ -8,3 +8,18 @@ REST Design: PokeAPI
 NOTES ->
 En JS, los parametros dentro de un endpoint se escriben con :
 De forma que, si queremos especificar algun parametro dentro de la ruta de un endpoint, debera ser de la siguiente manera:
+
+TESTING
+Existen dos librerias muy conocidas y utiles llamadas 'Mocha' y 'Chai'.
+Siempre es recomendable hacer una carpeta con el nombre 'test' donde podremos realizar estas pruebas con Mocha y Chai.
+Una suite es un contenedor que alberga una serie de pruebas que ayudan a reportar el estado de la ejecucion de los stests.
+En Chai, una suite es un 'describe' con varios 'it' dentro.
+
+Para configurar el uso de Mocha automaticamente en nuestra aplicacion, es necesario anadir la referencia al paquete en nuestro package.json de la siguiente manera:
+// En la seccion de "scripts" reemplazamos el valor de "test" por la ubicacion de mocha, como se muestra a continuacion
+"scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+Una vez que este configurado, es posible entrar el siguiente comando en la terminal para testear nuestro codigo: npm run test
+Esto nos permite poner a prueba todos los suites que hayamos codificado, y nos mostrara en consola los errores y los que corrieron bien.
+
