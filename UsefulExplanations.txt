@@ -1,0 +1,10 @@
+REST Design: PokeAPI
+- Anadir pokemon: POST /team/pokemons
+- Consultar equipo: GET /team
+- Eliminar pokemon: DELETE /team/pokemons/:id
+- Intercambiar el orden de pokemon: PUT /team
+- Sistema de credenciales
+
+NOTES ->
+En JS, los parametros dentro de un endpoint se escriben con :
+De forma que, si queremos especificar algun parametro dentro de la ruta de un endpoint, debera ser de la siguiente manera:
